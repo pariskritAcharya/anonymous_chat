@@ -1,0 +1,88 @@
+:root {
+  --bgcolorsec: rgb(68, 68, 68);
+  --bgcolorpri: white;
+  --text: rgb(222, 222, 222);
+}
+
+body {
+  overflow: hidden;
+  font-family: "Roboto", serif;
+}
+
+h1 {
+  font-family: "Rubik", serif;
+}
+
+.container {
+  height: 73vh;
+  overflow-y: scroll;
+  margin-bottom: 1.5rem;
+}
+::-webkit-scrollbar {
+  width: 0.9vw;
+  background: var(--bgcolorpri);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--bgcolorpri);
+}
+.text {
+  display: flex;
+  align-items: center;
+}
+pre {
+  font-size: 1rem;
+  background-color: var(--bgcolorsec);
+  color: var(--text);
+  padding: 10px;
+  padding-left: 1rem;
+  margin: 1px;
+  border-radius: 0.7rem 2rem 2rem 2rem;
+}
+
+.text > i {
+  font-size: 2rem;
+  margin-left: 5vw;
+  padding: 1rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+
+.input {
+  position: relative;
+  bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+textarea {
+  background-color: var(--bgcolorsec);
+  color: var(--text);
+  resize: none;
+  width: 75vw;
+  min-height: 2.5rem;
+  max-height: 5.5rem;
+  min-width: 75vw;
+  max-width: 75vw;
+  field-sizing: content;
+  border-width: 0;
+  border-radius: 0.5rem;
+  padding: 5px;
+  padding-left: 10px;
+}
+
+::placeholder {
+  color: var(--text);
+}
+
+button {
+  position: absolute;
+  bottom: -1.5vh;
+  width: 3rem;
+  height: 3rem;
+  margin: 1rem;
+  background: var(--bgcolorsec);
+  color: var(--text);
+  border-width: 0;
+  border-radius: 50%;
+}
